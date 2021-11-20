@@ -157,7 +157,7 @@ body {
 .txt-dark-blue {color: var(--very-dark-blue);}
 .txt-soft-red {color: var(--soft-red);}
 .txt-grey-blue {color: var(--grayish-Blue);}
-
+.txt-white {color: var(--white);}
 
 .fs-900 { font-size: var(--fs-900); }
 .fs-800 { font-size: var(--fs-800); }
@@ -178,8 +178,8 @@ body {
 /*Buttons*/
 
 .btn {
-    font-size: 2rem;
-    padding: 0 2em;
+    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
     border-radius: 10px;
     text-decoration: none;
     border: 0;
@@ -192,7 +192,7 @@ body {
 }
 
 
-    @media (max-width: 44.9rem) {
+@media (max-width: 44.9rem) {
         
     
 .header {
@@ -329,4 +329,79 @@ body {
     color: white;
     cursor: pointer;
 }
+}
+
+
+
+    .title {
+       margin-top: 35px;
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+    }
+
+    @media (min-width: 45rem) {
+        .title {
+           flex-direction: row-reverse;
+        }
+    }
+
+.title-image {
+        position: relative;
+        display: grid;
+        align-items: left;
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .image-title {
+        z-index: 999;
+    
+    }
+
+.blue {
+    position: absolute;
+    z-index: -1;
+    justify-self: end;
+    width: 75%;
+    height: 70%;
+    border-end-start-radius: 140px;
+    background-color: var(--soft-blue);
+    top: 32%;
+    right: 0;
+}    
+
+@media (min-width: 156rem) {
+
+    .title-image {
+        width: 50%;
+    }
+
+    .image-title {
+        justify-self: center
+    }
+    .blue {
+        top: 32%;
+        right: 0;
+        width: 55%;
+        
+    }
+
+    .title-container {
+        justify-content: center;
+    }
+}
+.title-btns {
+    justify-content: center;
+}
+
+.grey {
+    background-color: rgb(238, 238, 238);
+}
+
+.title-container {
+   flex-direction: column;
+   gap: 1.3rem;
+   padding-inline: 2rem;
 }
