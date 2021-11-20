@@ -192,22 +192,35 @@ body {
 }
 
 
-    @media (max-width: 44rem) {
- 
+    @media (max-width: 44.9rem) {
+        
+    
+.header {
+   margin-top: 1rem;
+    padding-inline: 1rem;
+    justify-content: space-between;
+}
+       
+       .navbard {
+           display: none;
+           
+       }
 
         .logo {
             z-index: 999;
-           
         }
-
+        
+       
         
         .burger-menu {
             position: absolute;
-            top: 5%;
+            top: 3%;
             right: 5%;
             z-index: 999;
-           
         }
+
+       
+
         .navbar {
             position: fixed;
             height: 100vh;
@@ -221,11 +234,11 @@ body {
             display: flex;
             flex-direction: column;
             gap: 30%;
-         
             
           }
        
         .navbar .nav-ul {
+
             list-style-type: none;
             justify-content: space-around;
             flex-direction: column;
@@ -260,6 +273,12 @@ body {
 
 
 @media (min-width: 45em) {
+   
+    .navbard {
+        margin-top: 20px;
+        display: block;
+        letter-spacing: 1px;
+    }
     .socials {
         display: none;
     }
@@ -274,9 +293,7 @@ body {
         display: none;
     }
 .navbar {
-    margin-top: 20px;
-    display: block;
-    letter-spacing: 1px;
+   display: none;
    
 }
 
@@ -289,7 +306,7 @@ body {
     max-width: 100%;
 }
 
-.navbar .nav-ul {
+.navbard .nav-ul {
     list-style-type: none;
     justify-content: space-around;
     
