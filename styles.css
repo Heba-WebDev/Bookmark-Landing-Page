@@ -356,7 +356,7 @@ body {
 
 
     .image-title {
-        z-index: 999;
+        z-index: -1;
     
     }
 
@@ -404,4 +404,8 @@ body {
    flex-direction: column;
    gap: 1.3rem;
    padding-inline: 2rem;
+}
+
+.tab1, .tab2, .tab3 {
+    position: relative;
 }
