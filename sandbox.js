@@ -36,3 +36,39 @@ function showMobileMenu() {
 }
 
 
+//the 3 tabs that get highlighted once they are clicked on
+
+let tab1 = document.querySelector('#tab1');
+let tab2 = document.querySelector('#tab2');
+let tab3 = document.querySelector('#tab3');
+
+
+
+
+
+tab1.addEventListener('click', getHighlighted1);
+
+function getHighlighted1() {
+    tab1.classList.add('tab');
+
+    tab2.classList.remove('tab');
+    tab3.classList.remove('tab');
+}
+
+tab2.addEventListener('click', getHighlighted2);
+
+function getHighlighted2() {
+    tab2.classList.add('tab');
+
+    tab1.classList.remove('tab');
+    tab3.classList.remove('tab');
+}
+
+tab3.addEventListener('click', getHighlighted3);
+
+function getHighlighted3() {
+    tab3.classList.add('tab');
+
+    tab1.classList.remove('tab');
+    tab2.classList.remove('tab');
+}
