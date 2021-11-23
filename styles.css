@@ -572,6 +572,7 @@ body {
         justify-content: start;
         align-items: left;
         text-align: left;
+       align-self: center;
         
     }
 
@@ -581,7 +582,7 @@ body {
         align-self: left;
     }
 
-    .tab-text > .btn {
+    .tab-text  .btn {
         display: block;
       width: 35%;
       border-radius: 5px;
@@ -606,6 +607,7 @@ body {
     padding-inline: 2rem;
     text-align: center;
     margin-bottom: 3rem;
+    margin-top: 6rem;
 }
 
 .extentions-intro {
