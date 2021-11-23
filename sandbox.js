@@ -83,3 +83,44 @@ function getHighlighted3() {
     tab2Content.style.display = 'none';
     tab3Content.style.display = '';
 }
+
+
+let question1 = document.querySelector('#q1');
+let question2 = document.querySelector('#q2');
+let question3 = document.querySelector('#q3');
+let question4 = document.querySelector('#q4');
+
+let answer1 = document.querySelector('.a1');
+let answer2 = document.querySelector('.a2');
+let answer3 = document.querySelector('.a3');
+let answer4 = document.querySelector('.a4');
+
+
+let arrow1 = document.querySelector('.arrow1');
+let arrow2 = document.querySelector('.arrow2');
+let arrow3 = document.querySelector('.arrow3');
+let arrow4 = document.querySelector('.arrow4');
+
+// arrow1.style.transform = "rotate(180deg)";
+
+
+answer1.style.display = 'none';
+answer2.style.display = 'none';
+answer3.style.display = 'none';
+answer4.style.display = 'none';
+
+question1.addEventListener('click', openA)
+
+function openA() {
+let counter = 0;
+
+if(counter == 0) {
+    arrow1.style.transform = "rotate(180deg)";
+    answer1.style.display ='';
+    counter++;
+} else {
+   
+    answer1.style.display ='none';
+    counter--;
+}
+}
