@@ -513,9 +513,12 @@ body {
 
 .tabs-sections {
     margin-top: -5rem;
+    margin-bottom: 2rem;
 }
 
-.tab1 {
+.tab1, 
+.tab2, 
+.tab3 {
     padding: 0;
     width: 100%;
     position: relative;
@@ -551,8 +554,135 @@ body {
     padding-inline: 3rem;
     text-align: center;
 }
+.tab-text > .btn {
+    display: none;
+}
+
+@media (min-width: 45em) {
+    .tab1, 
+    .tab2, 
+    .tab3 {
+       grid-template-columns: 1fr 1fr;
+       padding-right: 2.5rem;
+    }
+
+    .tab-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: left;
+        text-align: left;
+        
+    }
+
+    .tab-text p {
+        width: 100%;
+        justify-self: start;
+        align-self: left;
+    }
+
+    .tab-text > .btn {
+        display: block;
+      width: 35%;
+      border-radius: 5px;
+      height: 15%;
+      font-size: 0.8rem;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 0;
+    }
+
+   
+}
 
 .tab-text p {
     line-height: 2rem;
     letter-spacing: 0.5px;
+}
+
+
+.extentions {
+    padding-inline: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.extentions-intro {
+    margin-bottom: 2.5rem;
+}
+
+.extentions-intro p {
+    line-height: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.card {
+    width: 95%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    padding: 2.8rem 0;
+    box-shadow: 2px 2px 5px 3px rgb(223, 223, 223);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+
+.browser {
+display: flex;
+justify-content: center;
+}
+
+
+
+.dots img {
+    width: 100%;
+}
+
+.add-btn {
+    align-self: end;
+}
+
+.add-btn .btn {
+    width: 80%;
+    height: 100%;
+    padding: 1.3rem 0;
+    font-size: var(--fs-400);
+}
+
+@media (min-width: 45em) {
+
+
+    .extentions {
+        padding-inline: 5rem;
+    }
+    .add-btn .btn {
+        width: 90%;
+    }
+
+    .extentions-intro {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .extentions-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 100%;
+        padding: 0rem;
+        margin-top: 3rem;
+    }
+  .card {
+    width: 95%;
+    padding: 6.5rem 0;
+  }
+    .chrome {
+        display: grid;
+        align-self: start;
+    }
+    .firefox {
+        align-self: center;
+    }
+
+    .opera {
+        align-self: end;
+    }
 }

@@ -42,10 +42,12 @@ let tab1 = document.querySelector('#tab1');
 let tab2 = document.querySelector('#tab2');
 let tab3 = document.querySelector('#tab3');
 
+let tab1Content = document.querySelector('.tab1');
+let tab2Content = document.querySelector('.tab2');
+let tab3Content = document.querySelector('.tab3');
 
-
-
-
+tab2Content.style.display = 'none';
+tab3Content.style.display = 'none';
 tab1.addEventListener('click', getHighlighted1);
 
 function getHighlighted1() {
@@ -53,6 +55,9 @@ function getHighlighted1() {
 
     tab2.classList.remove('tab');
     tab3.classList.remove('tab');
+    tab1Content.style.display = '';
+    tab2Content.style.display = 'none';
+    tab3Content.style.display = 'none';
 }
 
 tab2.addEventListener('click', getHighlighted2);
@@ -62,6 +67,9 @@ function getHighlighted2() {
 
     tab1.classList.remove('tab');
     tab3.classList.remove('tab');
+    tab1Content.style.display = 'none';
+    tab2Content.style.display = '';
+    tab3Content.style.display = 'none';
 }
 
 tab3.addEventListener('click', getHighlighted3);
@@ -71,4 +79,7 @@ function getHighlighted3() {
 
     tab1.classList.remove('tab');
     tab2.classList.remove('tab');
+    tab1Content.style.display = 'none';
+    tab2Content.style.display = 'none';
+    tab3Content.style.display = '';
 }
