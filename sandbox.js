@@ -111,16 +111,70 @@ answer4.style.display = 'none';
 
 question1.addEventListener('click', openA)
 
-function openA() {
-let counter = 0;
 
-if(counter == 0) {
+let counterQ1 = 0;
+
+function openA() {
+if(counterQ1 == 0) {
     arrow1.style.transform = "rotate(180deg)";
     answer1.style.display ='';
-    counter++;
+    counterQ1++;
 } else {
-   
+    arrow1.style.transform = "rotate(360deg)";
     answer1.style.display ='none';
-    counter--;
+    counterQ1--;
 }
+}
+
+question2.addEventListener('click', openA2);
+let counterQ2 = 0;
+
+function openA2() {
+    if(counterQ2 == 0) {
+        arrow2.style.transform = "rotate(180deg)";
+        answer2.style.display ='';
+        counterQ2++;
+    } else {
+        arrow2.style.transform = "rotate(360deg)";
+        answer2.style.display ='none';
+        counterQ2--;
+    
+    }
+    
+}
+
+
+question3.addEventListener('click', openA3);
+let counterQ3 = 0;
+
+function openA3() {
+    if(counterQ3 == 0) {
+        arrow3.style.transform = "rotate(180deg)";
+        answer3.style.display ='';
+        counterQ3++;
+    } else {
+        arrow3.style.transform = "rotate(360deg)";
+        answer3.style.display ='none';
+        counterQ3--;
+    
+    }
+    
+}
+
+
+question4.addEventListener('click', openA4);
+let counterQ4 = 0;
+
+function openA4() {
+    if(counterQ4 == 0) {
+        arrow4.style.transform = "rotate(180deg)";
+        answer4.style.display ='';
+        counterQ4++;
+    } else {
+        arrow4.style.transform = "rotate(360deg)";
+        answer4.style.display ='none';
+        counterQ4--;
+    
+    }
+    
 }
