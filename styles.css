@@ -439,17 +439,21 @@ body {
 .getChrome {
     color: white;
 }
-.getChrome:hover {
-    border: 1px solid var(--soft-blue);
-    color: var(--soft-blue);
-    background-color: white;
+@media (min-width: 45em) {
+    .getChrome:hover {
+        border: 1px solid var(--soft-blue);
+        color: var(--soft-blue);
+        background-color: white;
+    }
+    
+    .getFirefox:hover {
+        border: 1px solid var(--grayish-Blue);
+        color: var(--grayish-Blue);
+        background-color: white;
+    }
+
 }
 
-.getFirefox:hover {
-    border: 1px solid var(--grayish-Blue);
-    color: var(--grayish-Blue);
-    background-color: white;
-}
 
 
 .features {
@@ -558,9 +562,12 @@ body {
     gap: 5rem;
 }
 
-.tabh3:hover {
-   color: var(--soft-red);
+@media (min-width: 45em) {
+    .tabh3:hover {
+        color: var(--soft-red);
+     }
 }
+
 .tab-iamge {
     position: relative;
     width: 100%;
@@ -730,11 +737,14 @@ justify-content: center;
     color: white;
 }
 
-.add-btn button:hover {
-    background-color: white;
-    color: var(--soft-blue);
-    border: 1px solid var(--soft-blue);
+@media (min-width: 45em) {
+    .add-btn button:hover {
+        background-color: white;
+        color: var(--soft-blue);
+        border: 1px solid var(--soft-blue);
+    }
 }
+
 
 .faqs {
     padding-inline: 3rem;
@@ -764,10 +774,12 @@ justify-content: center;
     width: 100%;
 }
 
-
-.qq:hover {
-    color: var(--soft-red);
+@media (min-width: 45em) {
+    .qq:hover {
+        color: var(--soft-red);
+    }
 }
+
 
 
 .questions {
@@ -1044,7 +1056,10 @@ justify-content: center;
      }
 }
 
-.nav-footer .li:hover {
-    color: var(--soft-red);
+@media (min-width: 45em)  {
+    .nav-footer .li:hover {
+        color: var(--soft-red);
+    }
 }
+
 
