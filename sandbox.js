@@ -178,3 +178,35 @@ function openA4() {
     }
     
 }
+
+
+//we're checking if it's an email or not
+
+let regex = /[A-Za-z0-9]+[!#$%&'*+-/=?^_`{|}~]*[A-Za-z0-9]*@[A-Za-z0-9]+.[A-Za-z]/gi;
+
+let errorIcon = document.querySelector('.error');
+let message = document.querySelector('#message');
+let spanM = document.querySelector('#span');
+let submitBtn = document.querySelector('.submit');
+let email = document.querySelector('#email').value;
+let emailOne = document.querySelector('#email');
+
+errorIcon.style.display = 'none';
+message.style.display = 'none';
+
+submitBtn.addEventListener('click', checkTheEmail);
+
+function checkTheEmail() {
+
+    if(!regex.test(email)) {
+        errorIcon.style.display = 'block';
+        message.style.display = 'block';
+        submitBtn.style.marginTop = '2rem';
+        emailOne.dataset.turnon = 'false';
+    } else {
+        errorIcon.style.display = 'none';
+        message.style.display = 'none';
+        submitBtn.style.marginTop = '0';
+        emailOne.dataset.turnon = 'true';
+    }
+}

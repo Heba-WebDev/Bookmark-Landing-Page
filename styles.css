@@ -280,7 +280,15 @@ body {
             
         }
     }
+    .nav-li:hover {
+        color: var(--soft-red);
+    }
 
+    .login:hover {
+        border: 1px solid var(--soft-red);
+        background-color: white;
+        color: var(--soft-red);
+    }
 
 
 @media (min-width: 45em) {
@@ -328,6 +336,7 @@ body {
     margin-right: 15px;
     padding: 5px 15px;
 }
+
 
 .nav-li:hover {
     cursor: pointer;
@@ -422,6 +431,21 @@ body {
    flex-direction: column;
    gap: 1.3rem;
    padding-inline: 2rem;
+}
+
+.getChrome {
+    color: white;
+}
+.getChrome:hover {
+    border: 1px solid var(--soft-blue);
+    color: var(--soft-blue);
+    background-color: white;
+}
+
+.getFirefox:hover {
+    border: 1px solid var(--grayish-Blue);
+    color: var(--grayish-Blue);
+    background-color: white;
 }
 
 
@@ -529,6 +553,10 @@ body {
     width: 100%;
     position: relative;
     gap: 5rem;
+}
+
+.tabh3:hover {
+   color: var(--soft-red);
 }
 .tab-iamge {
     position: relative;
@@ -695,6 +723,15 @@ justify-content: center;
     }
 }
 
+.add-btn button {
+    color: white;
+}
+
+.add-btn button:hover {
+    background-color: white;
+    color: var(--soft-blue);
+    border: 1px solid var(--soft-blue);
+}
 
 .faqs {
     padding-inline: 3rem;
@@ -725,6 +762,9 @@ justify-content: center;
 }
 
 
+.qq:hover {
+    color: var(--soft-red);
+}
 
 
 .questions {
@@ -778,6 +818,7 @@ justify-content: center;
 
 .join-span, .join-title {
     text-align: center;
+    z-index: 2;
 }
 .join > * {
     width: 100%;
@@ -787,15 +828,83 @@ justify-content: center;
     flex-direction: column;
     justify-self: center;
     position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 45em) {
+    .email {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        gap: 1.3rem;
+    }
 }
 
 .email .error {
     position: absolute;
-    top: 45px;
+    top: 10px;
     right: 0;
     padding-right: 2rem;
-    display: none;
 }
+.email .errormessage {
+    background-color: var(--soft-red);
+    height: 90px;
+    width: 100%;
+   top: 0rem;
+   left: 0;
+   position: absolute;
+   z-index: -1;
+ 
+}
+
+#span {
+    justify-self: start;
+     align-self:flex-end;
+     display: grid;
+     justify-content: start;
+     align-items: flex-end; 
+     height: 110%;
+     margin-left: 0.8rem;
+     opacity: 0.8; 
+     font-size: 0.8rem;
+
+}
+
+@media (min-width: 45em) {
+
+    .email {
+        margin-top: 2rem;
+      
+    }
+
+    .email .error {
+        position: absolute;
+        top: 0.2rem;
+        left: 55%;
+        
+    }
+
+    .email .errormessage {
+        background-color: var(--soft-red);
+        height: 88px;
+        width: 65%;
+       top: -0.2rem;
+       left: 0;
+       position: absolute;
+       z-index: -1;
+     
+    }
+
+    [data-turnon = false] {
+        height: 55%;
+    }
+
+    [data-turnon = true] {
+        height: 100%;
+    }
+
+   
+}
+
 
 
 .email > * {
@@ -816,6 +925,7 @@ justify-content: center;
 }
 
 .email .submit {
+  
     display: flex;
     align-items: center;
     border: 0;
@@ -826,15 +936,28 @@ justify-content: center;
     padding: 3rem;
     gap: 2rem;
     justify-content: center;
-}
-
-.footer > * {
     width: 100%;
 }
+
+
+
 .nav-footer {
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -0.5rem;
 }
+
+
+.nav-footer .li {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
 
 .footer-logo{
     filter: invert(0.3) brightness(1.8);
@@ -861,3 +984,59 @@ justify-content: center;
     padding-bottom: 1rem;
     
 }
+
+
+@media (min-width: 45em) {
+    .join {
+       margin-top: 8rem; 
+       padding-inline:30%;
+       max-width: 100%;
+    }
+
+    .footer {
+        padding: 1.5rem 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-links {
+    flex-direction: row;
+    }
+
+    .nav-footer {
+        margin-left: 0;
+        flex-direction: row;
+        width: 50%;
+    }
+    
+    .nav-footer .li {
+        padding-bottom: 0;
+    }
+
+    .li a {
+        font-size: 0.8rem;
+    }
+
+    .footer-logo{
+        display: grid;
+        align-items: center;
+    }
+
+    .footber-socials {
+        width:12%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+        margin-bottom: -.8rem;
+    }
+
+
+     .footber-socials > * {
+        justify-self: end;
+     }
+}
+
+.nav-footer .li:hover {
+    color: var(--soft-red);
+}
+

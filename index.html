@@ -66,8 +66,8 @@
     browser tab and see your sites load instantly. Try it for free.</p>
 
     <div class="title-btns flex">
-      <button class="btn soft-blue" style="color: white;">Get it on Chrome</button>
-      <button class="btn grey">Get it on Firefox</button>
+      <button class="btn soft-blue getChrome">Get it on Chrome</button>
+      <button class="btn grey getFirefox">Get it on Firefox</button>
     </div>
 
  </div>
@@ -85,9 +85,9 @@
 </div>
 
 <div class="tabs flex">
-<div class="fs-600 grid tab" id="tab1"><h3>Simple Bookmarking</h3></div>
-<div class="fs-600 grid" id="tab2"><h3>Speedy Searching</h3></div>
-<div class="fs-600 grid" id="tab3"><h3>Easy Sharing</h3></div>
+<div class="fs-600 grid tab" id="tab1"><h3 class="tabh3">Simple Bookmarking</h3></div>
+<div class="fs-600 grid" id="tab2"><h3 class="tabh3">Speedy Searching</h3></div>
+<div class="fs-600 grid" id="tab3"><h3 class="tabh3">Easy Sharing</h3></div>
 </div>
 </section>
 
@@ -185,7 +185,7 @@
           <img alt="dots" src="/Bookmark-Landing-Page/images/bg-dots.svg">
         </div>
        <div class="add-btn">
-        <button class="btn soft-blue" style="color: white;">Add & Install Extension</button>
+        <button class="btn soft-blue">Add & Install Extension</button>
        </div>
       </div>
      </div>
@@ -205,7 +205,7 @@
           <img alt="dots" src="/Bookmark-Landing-Page/images/bg-dots.svg">
         </div>
        <div class="add-btn">
-        <button class="btn soft-blue" style="color: white;">Add & Install Extension</button>
+        <button class="btn soft-blue">Add & Install Extension</button>
        </div>
       </div>
      </div>
@@ -225,7 +225,7 @@
           <img alt="dots" src="/Bookmark-Landing-Page/images/bg-dots.svg">
         </div>
        <div class="add-btn">
-        <button class="btn soft-blue" style="color: white;">Add & Install Extension</button>
+        <button class="btn soft-blue">Add & Install Extension</button>
        </div>
       </div>
      </div>
@@ -247,7 +247,7 @@
   <div class="questions">
     <div class="question1">
       <div class="q flex" id="q1">
-        <h4>What is Bookmark?</h4>
+        <h4 class="qq">What is Bookmark?</h4>
         <img alt="arrow down" src="/Bookmark-Landing-Page/images/icon-arrow.svg" class="arrow1">
       </div>
       <div class="a a1">
@@ -258,7 +258,7 @@
   
     <div class="question2">
       <div class="q flex" id="q2">
-        <h4>How can I request a new browser?</h4>
+        <h4 class="qq">How can I request a new browser?</h4>
         <img alt="arrow down" src="/Bookmark-Landing-Page/images/icon-arrow.svg" class="arrow2">
       </div>
       <div class="a a2">
@@ -272,7 +272,7 @@
   
     <div class="question3">
       <div class="q flex" id="q3">
-        <h4>Is there a mobile app?</h4>
+        <h4 class="qq">Is there a mobile app?</h4>
         <img alt="arrow down" src="/Bookmark-Landing-Page/images/icon-arrow.svg" class="arrow3">
       </div>
       <div class="a a3">
@@ -285,7 +285,7 @@
   
     <div class="question4">
       <div class="q flex" id="q4">
-        <h4>What about other Chromium browsers?</h4>
+        <h4 class="qq">What about other Chromium browsers?</h4>
         <img alt="arrow down" src="/Bookmark-Landing-Page/images/icon-arrow.svg" class="arrow4">
       </div>
       <div class="a a4">
@@ -312,10 +312,12 @@
   <div class="join-email">
     
       <form class="email flex">
-        <label for="email"></label>
+        <label for="email" style="display: none;"></label>
         <img alt="erro" src="/Bookmark-Landing-Page/images/icon-error.svg" class="error">
-      <input id="email" required type="email" placeholder="Enter your email address" style="text-align: center;">
-      
+      <input data-trunon = "true" id="email" required type="email" placeholder="Enter your email address" style="text-align: center;">
+      <div class="errormessage grid" id="message">
+        <span id="span">Whoops, make sure it's an email</span>
+      </div>
       <input type="submit" value="Contact Us" class="submit soft-red" style="color: white; text-align: center;">
       
       </form>
@@ -329,10 +331,10 @@
   <div class="footer-logo">
     <img alt="logo" src="/Bookmark-Landing-Page/images/logo-bookmark.svg">
   </div>
-  <div class="footer-links grid">
+  <div class="footer-links flex">
     
-    <ul class="nav-footer flex">
-      <li class="li uppercase "><a>Features</a></li>
+    <ul class="nav-footer flex" >
+      <li class="li uppercase grid"><a>Features</a></li>
       <li class="li uppercase"><a>Pricing</a></li>
       <li class="li uppercase"><a>Contact</a></li>
     </ul>
