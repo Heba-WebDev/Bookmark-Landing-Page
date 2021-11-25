@@ -25,12 +25,14 @@ function showMobileMenu() {
       navbar.style.display = '';
         document.querySelector('.burger-menu').src = "/Bookmark-Landing-Page/images/icon-close.svg";
         document.querySelector('.logo').style.filter = "invert(0.3) brightness(1.8)";
+        document.body.style.overflow = 'hidden';
         navbarCounter++;
     } else if (navbarCounter > 0) {
        
         navbar.style.display = 'none';
         document.querySelector('.burger-menu').src = "/Bookmark-Landing-Page/images/icon-hamburger.svg";
         document.querySelector('.logo').style.filter = "";
+        document.body.style.overflow = '';
         navbarCounter--;
     }
 }
@@ -210,3 +212,4 @@ function checkTheEmail() {
         emailOne.dataset.turnon = 'true';
     }
 }
+
